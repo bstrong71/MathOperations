@@ -2,14 +2,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Enter the first number: ");
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the first number: ");
         String firstNumber = scanner.nextLine();
-        System.out.println("Enter the second number: ");
-        scanner = new Scanner(System.in);
-        String secondNumber = scanner.nextLine();
         double operand1 = Double.parseDouble(firstNumber); // convert inputs to doubles
+
+        System.out.println("Enter the second number: ");
+        String secondNumber = scanner.nextLine();
         double operand2 = Double.parseDouble(secondNumber);
+
+
         double sum = operand1 + operand2;
         double difference = operand1 - operand2;
         double division = operand1 / operand2;
